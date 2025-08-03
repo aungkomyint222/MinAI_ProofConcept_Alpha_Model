@@ -1,3 +1,20 @@
+# MinAI Proof of Concept Alpha Model
+
+🌐 **Try the Live Version**: You can test this model online at [https://huggingface.co/spaces/aungkomyint/minpoc](https://huggingface.co/spaces/aungkomyint/minpoc)
+
+⚠️ **Important Notice:** This is a proof of concept and alpha version model. It is not expected to be useful or produce good quality outputs.
+
+## About
+- Experimental Burmese language model
+- Limited training data and capabilities  
+- Responses may be inaccurate, incomplete, or nonsensical
+- Use for research and testing purposes only
+
+## Usage
+This Space demonstrates a basic Burmese language model interface built with Gradio.
+
+---
+
 # MinAI Proof of Concept Alpha Model 🇲🇲
 
 A lightweight GPT-2 based language model trained for Burmese text generation, serving as a proof of concept for minimal AI architectures.
