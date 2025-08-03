@@ -1,0 +1,139 @@
+Total parameters: 7,049,216
+Trainable parameters: 7,049,216
+
+Model architecture:
+GPT2LMHeadModel(
+  (transformer): GPT2Model(
+    (wte): Embedding(8000, 256)
+    (wpe): Embedding(1024, 256)
+    (drop): Dropout(p=0.1, inplace=False)
+    (h): ModuleList(
+      (0-5): 6 x GPT2Block(
+        (ln_1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (attn): GPT2Attention(
+          (c_attn): Conv1D(nf=768, nx=256)
+          (c_proj): Conv1D(nf=256, nx=256)
+          (attn_dropout): Dropout(p=0.1, inplace=False)
+          (resid_dropout): Dropout(p=0.1, inplace=False)
+        )
+        (ln_2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (mlp): GPT2MLP(
+          (c_fc): Conv1D(nf=1024, nx=256)
+          (c_proj): Conv1D(nf=256, nx=1024)
+          (act): NewGELUActivation()
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (ln_f): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  )
+  (lm_head): Linear(in_features=256, out_features=8000, bias=False)
+)
+
+Parameter details:
+transformer.wte.weight: torch.Size([8000, 256]), requires_grad=True
+transformer.wpe.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.0.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.0.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.0.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.0.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.0.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.0.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.0.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.0.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.0.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.0.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.0.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.0.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.1.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.1.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.1.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.1.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.1.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.1.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.1.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.1.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.1.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.1.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.1.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.1.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.2.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.2.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.2.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.2.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.2.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.2.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.2.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.2.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.2.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.2.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.2.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.2.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.3.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.3.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.3.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.3.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.3.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.3.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.3.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.3.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.3.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.3.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.3.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.3.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.4.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.4.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.4.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.4.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.4.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.4.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.4.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.4.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.4.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.4.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.4.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.4.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.5.ln_1.weight: torch.Size([256]), requires_grad=True
+transformer.h.5.ln_1.bias: torch.Size([256]), requires_grad=True
+transformer.h.5.attn.c_attn.weight: torch.Size([256, 768]), requires_grad=True
+transformer.h.5.attn.c_attn.bias: torch.Size([768]), requires_grad=True
+transformer.h.5.attn.c_proj.weight: torch.Size([256, 256]), requires_grad=True
+transformer.h.5.attn.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.h.5.ln_2.weight: torch.Size([256]), requires_grad=True
+transformer.h.5.ln_2.bias: torch.Size([256]), requires_grad=True
+transformer.h.5.mlp.c_fc.weight: torch.Size([256, 1024]), requires_grad=True
+transformer.h.5.mlp.c_fc.bias: torch.Size([1024]), requires_grad=True
+transformer.h.5.mlp.c_proj.weight: torch.Size([1024, 256]), requires_grad=True
+transformer.h.5.mlp.c_proj.bias: torch.Size([256]), requires_grad=True
+transformer.ln_f.weight: torch.Size([256]), requires_grad=True
+transformer.ln_f.bias: torch.Size([256]), requires_grad=True
+
+Model config:
+GPT2Config {
+  "activation_function": "gelu_new",
+  "attn_pdrop": 0.1,
+  "bos_token_id": 50256,
+  "embd_pdrop": 0.1,
+  "eos_token_id": 50256,
+  "initializer_range": 0.02,
+  "layer_norm_epsilon": 1e-05,
+  "model_type": "gpt2",
+  "n_ctx": 1024,
+  "n_embd": 256,
+  "n_head": 4,
+  "n_inner": null,
+  "n_layer": 6,
+  "n_positions": 1024,
+  "reorder_and_upcast_attn": false,
+  "resid_pdrop": 0.1,
+  "scale_attn_by_inverse_layer_idx": false,
+  "scale_attn_weights": true,
+  "summary_activation": null,
+  "summary_first_dropout": 0.1,
+  "summary_proj_to_labels": true,
+  "summary_type": "cls_index",
+  "summary_use_proj": true,
+  "transformers_version": "4.54.0",
+  "use_cache": true,
+  "vocab_size": 8000
+}
